@@ -1,7 +1,9 @@
 export default async function handler(req, res) {
   try {
     const response = await fetch("https://lasvecka.nu/data", {
-      headers: { "Content-Type": "application/json" }
+      headers: { 
+        "Content-Type": "application/json",
+       }
     });
     const data = await response.text();
     res.setHeader("Access-Control-Allow-Origin", "*"); // allow frontend access
