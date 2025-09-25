@@ -13,13 +13,14 @@ export default async function handler(req, res) {
         
         <div class="settings">
             <h3>Inställningar</h3>
+            <p>GP använd standardinställningarna</p>
             <div class="setting-row">
                 <label class="setting-label" for="quality">JPG Kvalitet (0.1-1.0):</label>
-                <input type="number" id="quality" class="setting-input" min="0.1" max="1.0" step="0.1" value="0.8">
+                <input type="number" id="quality" class="setting-input" min="0.1" max="1.0" step="0.1" value="0.6">
             </div>
             <div class="setting-row">
-                <label class="setting-label" for="scale">Bildskala (1.0-3.0):</label>
-                <input type="number" id="scale" class="setting-input" min="1.0" max="3.0" step="0.1" value="2.0">
+                <label class="setting-label" for="scale">Bildskala (0.5-3.0):</label>
+                <input type="number" id="scale" class="setting-input" min="0.5" max="3.0" step="0.1" value="1.0">
             </div>
         </div>
 
